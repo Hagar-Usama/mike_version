@@ -32,6 +32,6 @@ jobs:
       - name: deploy version
         run: mike deploy v5 latest
       - name: make it the default version
-        run: mike set default v5
+        run: mike set-default v5
       - name: publish that version
         run: mkdocs gh-deploy --force
