@@ -21,6 +21,8 @@ jobs:
           path: .cache
       # - run: pip install mkdocs-material 
       # - run: mkdocs gh-deploy --force
+      - name: install mkdocs-material
+        run: pip install mkdocs-material
       - name: install mike
         run: pip install mike 
       - name: deploy version
