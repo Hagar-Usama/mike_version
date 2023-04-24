@@ -1,6 +1,10 @@
 site_name: Mike Version
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: pink
 
 extra:
   version:
