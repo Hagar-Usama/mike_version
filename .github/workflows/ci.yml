@@ -5,6 +5,7 @@ on:
       - master 
       - main
       - development
+      - basic-template
 permissions:
   contents: write
 jobs:

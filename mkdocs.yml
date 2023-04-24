@@ -3,7 +3,7 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: teal
+      primary: purple
       accent: pink
 
 extra:
