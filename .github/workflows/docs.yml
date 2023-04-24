@@ -25,4 +25,6 @@ jobs:
       - name: install mike
         run: pip install mike 
       - name: deploy version
-        run: mike deploy v1 stable
+        run: mike deploy v2
+      - name: publish that version
+        run: mkdocs gh-deploy --force
