@@ -4,7 +4,6 @@ on:
     branches:
       - master 
       - main
-      - development
       - basic-template
 permissions:
   contents: write
@@ -20,19 +19,5 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      # - run: pip install mkdocs-material 
-      # - run: mkdocs gh-deploy --force
-      - name: install mkdocs-material
-        run: pip install mkdocs-material
-      - name: install mike
-        run: pip install mike 
-      # - name: Setup doc deploy
-      #   run: |
-      #     git config --global user.name Hagar Usama
-      #     git config --global user.email hagar_usama@outlook.com
-      # - name: deploy version
-      #   run: mike deploy v5 latest
-      # - name: make it the default version
-      #   run: mike set-default v5
-      - name: publish that version
-        run: mkdocs gh-deploy --force
+      - run: pip install mkdocs-material 
+      - run: mkdocs gh-deploy --force
