@@ -27,6 +27,10 @@ jobs:
         run: pip install mike 
       - name: deploy version
         run: mike deploy v5 latest
+      - name: Setup doc deploy
+        run: |
+          git config --global user.name Hagar Usama
+          git config --global user.email hagar_usama@outlook.com
       - name: make it the default version
         run: mike set default v5
       - name: publish that version
