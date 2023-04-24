@@ -24,3 +24,7 @@ jobs:
           git config --global user.email hagar_usama@outlook.com
       - name: Build docs website and API reference
         run: poetry run mike deploy --push develop
+      - name: install mike
+        run: pip install mike 
+      - name: deploy version
+        run: mike deploy v1 stable
